@@ -41,3 +41,14 @@ print(running_total([14, 11, 7, 15, 20])
       == [14, 25, 32, 47, 67])                    # True
 print(running_total([3]) == [3])                  # True
 print(running_total([]) == [])                    # True
+
+# # Their answer
+# def running_total(nums):
+#     result_list = []
+#     total = 0
+
+#     for num in nums:
+#         total += num
+#         result_list.append(total)
+
+#     return result_list

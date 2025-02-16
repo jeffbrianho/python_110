@@ -62,3 +62,22 @@ else:
 # 17 is in 25,15,20,17,23.
 
 # 18 isn't in 25,15,20,17,23.
+
+# THEIR ANSWER
+
+# numbers = []
+
+# numbers.append(input("Enter the 1st number: "))
+# numbers.append(input("Enter the 2nd number: "))
+# numbers.append(input("Enter the 3rd number: "))
+# numbers.append(input("Enter the 4th number: "))
+# numbers.append(input("Enter the 5th number: "))
+# last_number = input("Enter the last number: ")
+
+# numbers_list = ','.join(numbers)
+
+# if last_number in numbers:
+#     print(f"{last_number} is in {numbers_list}.")
+# else:
+#     print(f"{last_number} isn't in {numbers_list}.")
+

@@ -23,7 +23,10 @@ def digit_list(num):
 
     return final_lst
 
+#their answer
 
+def digit_list(number):
+    return [int(digit) for digit in str(number)]
 
 
 print(digit_list(12345) == [1, 2, 3, 4, 5])       # True

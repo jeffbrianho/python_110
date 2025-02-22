@@ -20,3 +20,16 @@ def union(lst1, lst2):
 
 print(union([1, 3, 5], [3, 6, 9]) == {1, 3, 5, 6, 9}) # True
 
+#Their ansewr
+def copy_non_dups_to(result_set, lst):
+    for value in lst:
+        result_set.add(value)
+
+def union(list1, list2):
+    result_set = set()
+    copy_non_dups_to(result_set, list1)
+    copy_non_dups_to(result_set, list2)
+    return result_set
+
+def union(list1, list2):
+    return set(list1).union(set(list2))

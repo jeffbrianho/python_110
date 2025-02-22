@@ -29,6 +29,24 @@ def multiplicative_average(lst):
     average = multiplied_lst[-1] / len(lst)
 
     return f'{average:.3f}'
+
+# Their answer:
+def round_to_three_digits(number):
+    rounded_number_as_str = str(round(number, 3))
+    decimal_position = rounded_number_as_str.find('.')
+
+    while len(rounded_number_as_str) - decimal_position < 4:
+        rounded_number_as_str += '0'
+
+    return rounded_number_as_str
+
+def multiplicative_average(numbers):
+    product = 1
+
+    for num in numbers:
+        product *= num
+
+    return round_to_three_digits(product / len(numbers))
    
 
 

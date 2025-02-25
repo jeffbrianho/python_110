@@ -11,3 +11,9 @@ print(sorted(lst, reverse=True))
 
 # [-16, -6, 7, 8, 9, 10, 11, 50]          # Ascending sort
 # [50, 11, 10, 9, 8, 7, -6, -16]          # Descending sort
+
+sorted_lst = sorted(lst)
+print(sorted_lst)
+
+sorted_lst = sorted(lst, reverse=True)
+print(sorted_lst)

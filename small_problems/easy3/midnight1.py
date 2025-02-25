@@ -26,27 +26,37 @@ if pos start at 0 if neg start at 24:00
 
 """
 
-def time_of_day(num):
-    if abs(num) > 1440:
-        over_day_time = abs(num) / 60
-        while over_day_time > 24:
-            over_day_time -= 24
-        if num < 0:
-            print(f'{24 - over_day_time}')
+def time_of_day(mins):
+
+    if mins >= 0:
+
+        mins_left = mins
+        count = 00
+
+        while mins_left >= 60:
+            mins_left -= 60
+            if count >= 23:
+                count = 0
+            else:
+                count += 1
+        return f'{count:02d}:{mins_left:02d}'
     
-    if abs(num) > 60:
-        greater_than_hour = num / 60
+    else:
+        neg_mins_left = mins
+        neg_count = -1
+        while neg_mins_left <= -60:
+            neg_mins_left += 60
+            if neg_count <= -24:
+                neg_count = -1
+            else:
+                neg_count -= 1
+        
+        return f'{(24 + neg_count):02d}:{(60 + neg_mins_left):02d}'
 
-        if greater_than_hour > 24:
-            greater_than_day = greater_than_hour / 24
-
-
-
-
-# print(time_of_day(0) == "00:00")        # True
-# print(time_of_day(-3) == "23:57")       # True
-# print(time_of_day(35) == "00:35")       # True
-# print(time_of_day(-1437) == "00:03")    # True
-# print(time_of_day(3000) == "02:00")     # True
-# print(time_of_day(800))# == "13:20")      # True
-print(time_of_day(-4231))# == "01:29")    # True
+print(time_of_day(0) == "00:00")        # True
+print(time_of_day(-3) == "23:57")       # True
+print(time_of_day(35) == "00:35")       # True
+print(time_of_day(-1437) == "00:03")    # True
+print(time_of_day(3000) == "02:00")     # True
+print(time_of_day(800) == "13:20")      # True
+print(time_of_day(-4231) == "01:29")    # True

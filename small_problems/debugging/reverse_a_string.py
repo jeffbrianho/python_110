@@ -12,3 +12,5 @@ def reverse_string(string):
 # string = ollehhello
 # it is adding to the original string. must delete the original before overriding
 print(reverse_string("hello") == "olleh")
+
+#also use string[::-1]

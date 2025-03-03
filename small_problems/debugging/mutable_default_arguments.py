@@ -4,15 +4,13 @@
 def append_to_list(value, lst=None):
     if lst is None:
         lst = []
-        lst.append(value)
-
-    else:
-        lst.append(value)
+    
+    lst.append(value)
 
     return lst
 
-print(append_to_list(1, [543,3]))# == [1])
+print(append_to_list(1) == [1])
 print(append_to_list(2) == [2])
 
 #when using a default lst. if it was used before, it will save it as the previous lst 
-# better to just have an empty lst in the body
+# better to just have an empty lst in the body with a conditional to use if they do not provide one

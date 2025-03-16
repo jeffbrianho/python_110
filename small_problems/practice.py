@@ -5,7 +5,17 @@
 # The binary number returned should be a string.
 
 def add_binary(a,b):
-    return a + b
+    bin_sum = a + b
+    current_sum = bin_sum
+    final_bin = '0' 
+
+    while current_sum > 0:
+        if final_bin[0] == '1':
+            final_bin = '0' + final_bin
+            final_bin[0] = '0'
+            final_bin 
+            
+        final_bin += 1
 
 print(add_binary(1, 1))
 

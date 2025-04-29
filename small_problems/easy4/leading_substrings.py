@@ -41,3 +41,5 @@ def leading_substrings(s):
 print(leading_substrings('abc') == ['a', 'ab', 'abc'])
 print(leading_substrings('a') == ['a'])
 print(leading_substrings('xyzy') == ['x', 'xy', 'xyz', 'xyzy'])
+
+#This will provide a list of substrings from the leading letter and concatenating the next for each element

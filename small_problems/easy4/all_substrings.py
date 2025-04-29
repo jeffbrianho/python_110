@@ -30,3 +30,4 @@ expected_result = [
 print(substrings('abcde') == expected_result)  # True
 
 
+# This will provide a list of all substring iterations in order. 

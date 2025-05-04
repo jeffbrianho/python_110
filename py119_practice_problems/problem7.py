@@ -44,3 +44,5 @@ print(pairs([23]) == 0)
 print(pairs([997, 997]) == 1)
 print(pairs([32, 32, 32]) == 1)
 print(pairs([7, 7, 7, 7, 7, 7, 7]) == 3)
+
+# 5 mins

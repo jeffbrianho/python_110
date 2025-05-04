@@ -28,3 +28,5 @@ print(even_substrings('3145926') == 16)
 print(even_substrings('2718281') == 16)
 print(even_substrings('13579') == 0)
 print(even_substrings('143232') == 12)
+
+# 3 mins

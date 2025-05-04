@@ -36,3 +36,4 @@ print(is_pangram("A wizard’s job is to vex chumps quickly in golf.") == True)
 my_str = 'Sixty zippers were quickly picked from the woven jute bag.'
 print(is_pangram(my_str) == True)
 
+# 5 mins

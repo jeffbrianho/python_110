@@ -43,3 +43,7 @@ print(smaller_numbers_than_current([1]) == [0])
 my_list = [1, 4, 6, 8, 13, 2, 4, 5, 4]
 result   = [0, 2, 4, 5, 6, 1, 2, 3, 2]
 print(smaller_numbers_than_current(my_list) == result)
+
+# time 10 mins: 
+# theme: compare numbers to current set 
+# use set to reduce dups, iterate through each using nested loop

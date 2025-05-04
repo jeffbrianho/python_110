@@ -38,3 +38,15 @@ print(count_substrings('', 'x') == 0)
 print(count_substrings('bbbaabbbbaab', 'baab') == 2)
 print(count_substrings('bbbaabbbbaab', 'bbaab') == 2)
 print(count_substrings('bbbaabbbbaabb', 'bbbaabb') == 1)
+
+
+def count_substring(string, substring):
+    count = 0
+    i = 0
+    while i <= len(string) - len(substring):
+        if string[i:i + len(substring)] == substring:
+            count += 1
+            i += len(substring)  # Move past the found substring (non-overlapping)
+        else:
+            i += 1
+    return count

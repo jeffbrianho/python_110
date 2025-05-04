@@ -34,3 +34,5 @@ print(distinct_multiples('multiplicity') == 3)      # l, t, i
 print(distinct_multiples('7657') == 1)              # 7
 print(distinct_multiples('3141592653589793') == 4)  # 3, 1, 5, 9
 print(distinct_multiples('2718281828459045') == 5)  # 2, 1, 8, 4, 5
+
+# 3:58 mins

@@ -37,3 +37,7 @@ def closest_numbers(lst):
 print(closest_numbers([5, 25, 15, 11, 20]) == (15, 11))
 print(closest_numbers([19, 25, 32, 4, 27, 16]) == (25, 27))
 print(closest_numbers([12, 22, 7, 17]) == (12, 7))
+
+# 25 mins
+# ** practice getting the values from the key value. create a tuple with items() 
+# and use key swap to  get the second value (key, value)

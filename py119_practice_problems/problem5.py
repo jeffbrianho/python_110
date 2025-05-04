@@ -38,3 +38,6 @@ print(most_common_char(my_str) == 'p')
 
 my_str = 'Peter Piper repicked a peck of repickled peppers. He did!'
 print(most_common_char(my_str) == 'e')
+
+# 6 mins
+# main thing is sorting by value!

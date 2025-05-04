@@ -59,3 +59,6 @@ print(to_weird_case('aaA bB c') == 'aaA bB c')
 original = "Mary Poppins' favorite word is supercalifragilisticexpialidocious"
 expected = "Mary Poppins' fAvOrItE word is sUpErCaLiFrAgIlIsTiCeXpIaLiDoCiOuS"
 print(to_weird_case(original) == expected)
+
+# time 14 mins
+# 

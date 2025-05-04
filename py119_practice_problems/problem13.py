@@ -38,7 +38,9 @@ def unscramble(string1, string2):
 
 
 
-print(unscramble('ansucchlohlo', 'launchschooll')  == True)
+print(unscramble('ansucchlohlo', 'launchschool')  == True)
 print(unscramble('phyarunstole', 'pythonrules') == True)
 print(unscramble('phyarunstola', 'pythonrules') == False)
 print(unscramble('boldface', 'coal') == True)
+
+# 11 mins

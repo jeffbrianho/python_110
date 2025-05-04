@@ -40,3 +40,5 @@ print(longest_vowel_substring('eau') == 3)
 print(longest_vowel_substring('beauteous') == 3)
 print(longest_vowel_substring('sequoia') == 4)
 print(longest_vowel_substring('miaoued') == 5)
+
+# time 10 mins make counter and conditionals. dont forget to append when word ends in vowel

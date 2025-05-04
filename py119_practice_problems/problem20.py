@@ -25,3 +25,5 @@ print(what_is_different([7, 7, 7, 7.7, 7]) == 7.7)
 print(what_is_different([1, 1, 1, 1, 1, 1, 1, 11, 1, 1, 1, 1]) == 11)
 print(what_is_different([3, 4, 4, 4]) == 3)
 print(what_is_different([4, 4, 4, 3]) == 3)
+
+# 1 min

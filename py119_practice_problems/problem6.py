@@ -32,3 +32,5 @@ print(count_letters('W. E. B. Du Bois') == expected)
 print(count_letters('x') == {'x': 1})
 print(count_letters('') == {})
 print(count_letters('!!!') == {})
+
+# 2 mins

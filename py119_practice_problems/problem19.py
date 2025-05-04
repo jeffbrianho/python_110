@@ -24,3 +24,6 @@ print(odd_fellow([7, 99, 7, 51, 99]) == 51)
 print(odd_fellow([7, 99, 7, 51, 99, 7, 51]) == 7)
 print(odd_fellow([25, 10, -6, 10, 25, 10, -6, 10, -6]) == -6)
 print(odd_fellow([0, 0, 0]) == 0)
+
+# 2 mins
+

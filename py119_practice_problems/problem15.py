@@ -36,3 +36,5 @@ print(greatest_product('23456') == 360)      # 3 * 4 * 5 * 6
 print(greatest_product('3145926') == 540)    # 5 * 9 * 2 * 6
 print(greatest_product('1828172') == 128)    # 1 * 8 * 2 * 8
 print(greatest_product('123987654') == 3024) # 9 * 8 * 7 * 6
+
+# 6:30 mins

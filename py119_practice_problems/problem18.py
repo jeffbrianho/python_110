@@ -48,3 +48,6 @@ print(equal_sum_index([0, 2, 4, 4, 2, 3, 2]) == -1)
 # supposed to return the smallest correct index, the correct
 # return value is 0.
 print(equal_sum_index([0, 20, 10, -60, 5, 25]) == 0)
+
+# 15 mins
+

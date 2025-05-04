@@ -49,3 +49,5 @@ print(nearest_prime_sum([2, 12, 8, 4, 6]) == 5) # Nearest prime to 32 is 37
 
 # Nearest prime to 163 is 167
 print(nearest_prime_sum([50, 39, 49, 6, 17, 2]) == 4)
+
+# 10 mins

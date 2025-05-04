@@ -50,3 +50,13 @@ print(find_dup([
                   40, 23, 71, 62, 73, 32, 43, 24,  4, 56,
                    7, 34, 57, 74, 45, 11, 88, 67,  5, 58,
               ]) == 73)       # True
+
+## they took the number and compared to the rest to see if it was in when it dup it returned
+# i did the opposite added to a  list until it met a number in new list
+def find_dup(lst):
+    reference_list = []
+    for num in lst:
+        if num in reference_list:
+            return num
+        else:
+            reference_list.append(num)

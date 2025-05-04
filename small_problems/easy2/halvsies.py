@@ -57,3 +57,14 @@ def halvsies(lst):
     first_half = lst[:half]
     second_half = lst[half:]
     return [first_half, second_half]
+
+###
+def halvsies(lst):
+    if len(lst) % 2 == 0:
+        first_half = lst[:(len(lst)//2)]
+        second_half = lst[len(lst)//2:]
+        return [first_half, second_half]
+    else:
+        first_half = lst[:(len(lst)//2) + 1]
+        second_half = lst[len(lst)//2 + 1:]
+        return [first_half, second_half]

@@ -82,3 +82,28 @@ string = "What's up doc?"
 print(word_sizes(string) == {6: 1, 2: 1, 4: 1})
 
 print(word_sizes('') == {})
+
+def word_sizes(string):
+    if string:
+        word_list = string.split()
+        word_list_as_len = [len(word) for word in word_list]
+        return {length: word_list_as_len.count(length) for length in word_list_as_len}
+    else:
+        return {}
+
+string = 'Four score and seven.'
+print(word_sizes(string) == {4: 1, 5: 1, 3: 1, 6: 1})
+
+string = 'Hey diddle diddle, the cat and the fiddle!'
+print(word_sizes(string) == {3: 5, 6: 1, 7: 2})
+
+string = 'Humpty Dumpty sat on a wall'
+print(word_sizes(string) == {6: 2, 3: 1, 2: 1, 1: 1, 4: 1})
+
+string = "What's up doc?"
+print(word_sizes(string) == {6: 1, 2: 1, 4: 1})
+
+print(word_sizes('') == {})
+
+# 4 mins
+# create a dict/count - change words into lengths

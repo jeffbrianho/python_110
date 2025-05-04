@@ -86,3 +86,15 @@ def string_to_integer(s):
 
 # print(string_to_integer("4321")  == 4321)  # True
 # print(string_to_integer("570") == 570)    # True
+
+def string_to_integer(string):
+    LIST_OF_INT = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'] 
+
+    num_list = [(LIST_OF_INT.index(num) * (10 ** (len(string) - (indx + 1)))) for indx, num in enumerate(string)]
+    return sum(num_list)
+        
+
+print(string_to_integer("4321"))# == 4321)  # True
+print(string_to_integer("570") == 570)    # True
+
+# 8 mins

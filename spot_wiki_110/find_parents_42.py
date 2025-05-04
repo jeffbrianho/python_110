@@ -28,3 +28,10 @@ print(find_children("xXfuUuuF") == "FfUuuuXx")
 print(find_children("") == "")
 
 # 7.34 mins
+
+
+def find_children(string):
+
+    list_3 = sorted(string, key=lambda letter: (letter.lower(), letter.islower()))
+
+    one_word = "".join(list_3)

@@ -81,3 +81,16 @@ else:
 # else:
 #     print(f"{last_number} isn't in {numbers_list}.")
 
+my_lst = []
+for _ in range(5):
+    num = input('Enter a number: ')
+    my_lst.append(num)
+reference_num = input('Enter the last number:')
+
+if reference_num in my_lst:
+    print(f'{reference_num} is in {','.join(my_lst)}.')
+else:
+    print(f"{reference_num} isn't in {','.join(my_lst)}")
+
+# Time spent: 7 mins
+# Using a statement to assess if in a group 

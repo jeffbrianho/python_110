@@ -52,3 +52,23 @@ print(running_total([]) == [])                    # True
 #         result_list.append(total)
 
 #     return result_list
+
+def running_total(lst):
+    new_list = []
+    running_total = 0
+    if lst:
+        for num in lst:
+            running_total += num 
+            new_list.append(running_total)
+
+    return new_list
+
+
+print(running_total([2, 5, 13]) == [2, 7, 20])    # True
+print(running_total([14, 11, 7, 15, 20])
+      == [14, 25, 32, 47, 67])                    # True
+print(running_total([3]) == [3])                  # True
+print(running_total([]) == [])                    # True
+
+# 3 mins: 
+# approach: make a running total and append a  new variable to the list

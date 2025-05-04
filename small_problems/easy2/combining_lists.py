@@ -33,3 +33,8 @@ def union(list1, list2):
 
 def union(list1, list2):
     return set(list1).union(set(list2))
+
+# my second answer
+
+def union(lst1, lst2):
+    return (set(lst1) | set(lst2))

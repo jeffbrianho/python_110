@@ -49,3 +49,20 @@ def is_palindrome(string):
 
 # # all characters matter
 # print(is_palindrome("madam i'm adam") == False)
+
+
+def is_palindrome(word):
+    return word == word[::-1]
+
+print(is_palindrome('madam') == True)
+print(is_palindrome('356653') == True)
+print(is_palindrome('356635') == False)
+
+# case matters
+print(is_palindrome('Madam') == False)
+
+# all characters matter
+print(is_palindrome("madam i'm adam") == False)
+
+# Time < 1 min
+# create a cleaned string by iterating though and varifying by .isalnum() method

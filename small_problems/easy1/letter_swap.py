@@ -62,3 +62,22 @@ def swap_first_last_characters(word):
         return word
 
     return word[-1] + word[1:-1] + word[0]
+
+# my answer second round
+
+def swap_word(word):
+    return word[-1] + word[1:len(word) - 1] + word[0]
+
+def swap(sentence):
+    word_list = sentence.split()
+    return ' '.join([swap_word(word) if len(word) > 1 else word 
+                     for word in word_list])
+
+
+
+print(swap('Oh what a wonderful day it is')
+     == "hO thaw a londerfuw yad ti si")  # True
+print(swap('Abcde') == "ebcdA")            # True
+print(swap('a') == "a")                    # True
+
+# Time: 4 mins

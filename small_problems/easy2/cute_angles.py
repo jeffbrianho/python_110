@@ -82,3 +82,12 @@ def dms(degrees_float):
     return (f"{degrees_int}{DEGREE}"
             f"{pad_zeroes(minutes)}'"
             f'{pad_zeroes(seconds)}"')
+
+# my second answer
+
+def dms(number):
+    degree, remainder_min = divmod(number, 1)
+    min, remainder_sec = divmod((remainder_min * 60), 1)
+    sec, _ = divmod((remainder_sec * 60), 1)
+
+    return f"{int(degree)}{DEGREE}{int(min):02}'{int(sec):02}\""

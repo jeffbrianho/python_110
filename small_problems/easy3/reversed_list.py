@@ -62,3 +62,11 @@ list4 = []
 result4 = reverse_list(list4)
 print(result4 == [])                        # True
 print(list4 is result4)                     # True
+
+# my answer
+def reverse_list(lst):
+    copy_lst = lst[:]
+    lst.clear()
+    for indx in range(len(copy_lst) - 1, -1, -1):
+        lst.append(copy_lst[indx])  
+    return lst

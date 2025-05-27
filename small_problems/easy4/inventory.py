@@ -39,3 +39,9 @@ print(transactions_for(101, transactions) ==
           {"id": 101, "movement": "in",  "quantity": 12},
           {"id": 101, "movement": "out", "quantity": 18},
       ]) # True
+
+## second attempt 2:41 mins
+
+def transactions_for(id, lst_of_dict):
+    return [dictionary for dictionary in lst_of_dict
+                        if dictionary['id'] == id]

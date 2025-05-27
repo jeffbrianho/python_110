@@ -32,3 +32,10 @@ def interleave(list1, list2):
         new_list.extend([list1[idx], list2[idx]])
 
     return new_list
+
+def interleave(lst1, lst2):
+    nested_tuple = list(zip(lst1, lst2))
+    return [ele for tuple in nested_tuple
+            for ele in tuple]
+
+# 3 mins

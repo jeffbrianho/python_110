@@ -1,3 +1,31 @@
+# DONE 3:13 mins
+
+# Write a function that takes a list of integers between 0 and 19 and returns a list of 
+# those integers sorted based on the English word for each number:
+
+# zero, one, two, three, four, five, six, seven, eight, nine, ten, eleven, twelve,
+#  thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen
+
+ALPHA_LIST = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 
+              'nine', 'ten', 'eleven', 'twelve', 'thirteen', 'fourteen', 'fifteen', 
+              'sixteen', 'seventeen', 'eighteen', 'nineteen']
+
+def alphabetic_number_sort(lst):
+
+    def key_alpha(num):
+        return ALPHA_LIST[num]
+    
+    return sorted(lst, key=key_alpha)
+
+input_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,
+              10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+
+expected_result = [8, 18, 11, 15, 5, 4, 14, 9, 19, 1,
+                   7, 17, 6, 16, 10, 13, 3, 12, 2, 0]
+
+print(alphabetic_number_sort(input_list) == expected_result)
+# Prints True
+
 # Write a function that takes a list of integers between 0 and 19 and returns 
 # a list of those integers sorted based on the English word for each number:
 
@@ -71,3 +99,18 @@ print(alphabetic_number_sort(input_list) == expected_result)
 # when a key is used it makes an almost key value pair or a tuple sorts the key then returns the original value. the return 
 # is first ie ... ("zero", 0),("one", 1) - word_for_num inputs num = 0 and returns "zero"; sorted then sorts the first object at 
 # each index 0 then returns the original object at index 1
+
+# attempt 2 7 mins
+
+def key_sort(num):
+
+    REFERENCE = ['zero', 'one', 'two', 'three', 'four', 'five', 'six',
+                 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve',
+                 'thirteen', 'fourteen', 'fifteen', 'sixteen', 'seventeen',
+                 'eighteen', 'nineteen']
+    
+    return REFERENCE[num]
+
+
+def alphabetic_number_sort(lst):
+    return sorted(lst, key=key_sort)

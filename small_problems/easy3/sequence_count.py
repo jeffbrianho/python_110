@@ -39,6 +39,15 @@ def sequence(count, num):
 def sequence(count, start_num):
     return [start_num * num for num in range(1, count + 1)]
 
+# my answer
+def sequence(count, multiple):
+    lst = []
+    added = multiple
+    for _ in range(0, count):
+        lst.append(added)
+        added += multiple
+    return lst
+
 
 print(sequence(5, 1) == [1, 2, 3, 4, 5])          # True
 print(sequence(4, -7) == [-7, -14, -21, -28])     # True

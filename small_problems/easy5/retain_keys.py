@@ -48,3 +48,8 @@ keys = ['red', 'blue']
 expected_dict = {'red': 1, 'blue': 3}
 print(keep_keys(input_dict, keys) == expected_dict) # True
 
+# second attempt 2 mins
+def keep_keys(dictionary, keys):
+    return {key: value for key, value in dictionary.items()
+                                if key in keys}
+

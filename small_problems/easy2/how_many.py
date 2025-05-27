@@ -47,3 +47,7 @@ count_occurrences(vehicles)
 # truck => 3
 # SUV => 1
 # motorcycle => 2
+
+def count_occurrences(lst):
+    lst = [ele.casefold() for ele in lst]
+    [print(f'{ele} => {lst.count(ele)}') for ele in set(lst)]

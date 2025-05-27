@@ -66,3 +66,16 @@ def rotate_list(lst):
         return []
 
     return lst[1:] + [lst[0]]
+
+# my second answer 5:49 mins
+def rotate_list(lst):
+    final_list = []
+
+    if type(lst) != list:
+        return None
+    
+    if lst:
+        final_list.extend(lst[1:])
+        final_list.append(lst[0])
+    
+    return final_list

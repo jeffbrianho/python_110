@@ -78,3 +78,33 @@ def before_midnight(time_str):
         delta_minutes = 0
 
     return delta_minutes
+
+# my answer 2
+
+HOURS_IN_DAY = 24
+MINUTES_IN_HOURS = 60
+
+def after_midnight(string_time):
+    hours = int(string_time.split(':')[0])
+    minutes = int(string_time.split(':')[1])
+
+    if hours > 23:
+        hours = hours % HOURS_IN_DAY
+
+    mins_after_midnight = (hours * MINUTES_IN_HOURS) + minutes
+
+    return mins_after_midnight
+
+def before_midnight(string_time):
+    hours = int(string_time.split(':')[0])
+    minutes = int(string_time.split(':')[1])
+
+    if hours > 23:
+        hours = hours % HOURS_IN_DAY
+
+    mins_before_midnight = (hours * MINUTES_IN_HOURS) - minutes
+
+    return mins_before_midnight
+
+# two main takeaways from their answer - they use their first function to help with second,
+#  and if > 24 hours they just modulo the day

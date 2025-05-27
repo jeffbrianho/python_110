@@ -51,3 +51,9 @@ print(nearest_prime_sum([2, 12, 8, 4, 6]) == 5) # Nearest prime to 32 is 37
 print(nearest_prime_sum([50, 39, 49, 6, 17, 2]) == 4)
 
 # 10 mins
+
+
+def is_prime(num):
+    if num <= 1:
+        return False
+    return all([num % div != 0 for div in range(2, int(num**0.5)) + 1])

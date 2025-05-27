@@ -19,3 +19,14 @@ print(double_consonants('String') == "SSttrrinngg")
 print(double_consonants('Hello-World!') == "HHellllo-WWorrlldd!")
 print(double_consonants('July 4th') == "JJullyy 4tthh")
 print(double_consonants('') == "")
+
+
+def repeater(string):
+    return ''.join([char * 2 for char in string])
+
+def double_consonants(string):
+    VOWELS = 'aeiouAEIOU'
+    return ''.join([repeater(consonant) if consonant not in VOWELS and consonant.isalpha() 
+                                        else consonant
+                                        for consonant in string
+                                        ])

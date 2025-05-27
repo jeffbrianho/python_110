@@ -70,3 +70,13 @@ result = "IgNoRe 77 ThE 4444 nUmBeRs"
 print(staggered_case(string) == result)  # True
 
 print(staggered_case('') == "")          # True
+
+### second attepts
+
+
+def staggered_case(string):
+    return ''.join([string[indx].upper() 
+            if indx % 2 == 0 else string[indx].lower() 
+            if string[indx].isalpha() else string[indx]
+            for indx in range(len(string))
+            ])

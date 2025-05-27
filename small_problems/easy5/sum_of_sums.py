@@ -71,3 +71,7 @@ def sum_of_sums(numbers):
 
     return total_sum
 
+# mins did it like substrings second attempt
+
+def sum_of_sums(lst):
+    return sum(([sum(lst[:num + 1]) for num in range(len(lst))]))

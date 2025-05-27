@@ -17,3 +17,12 @@ print(order_by_value(my_dict) == keys)  # True
 # skill of using a key to access the value when creating a tuple with items dictionary(items)
 # will create 'p': 8 but the obtain_key function will create 8, 'p'. it will then organize and return the sorted pair.
 # the list comprehension will return a list of the key as written (line 9)
+
+# second try 3 mins, will only return the keys will need to use the above for full dictionary key/values
+
+def order_by_value(dictionary):
+
+    def value_sort(key):
+        return dictionary[key]
+    
+    return sorted(dictionary, key=value_sort)

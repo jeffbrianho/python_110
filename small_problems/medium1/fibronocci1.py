@@ -66,3 +66,13 @@ def fibonacci(nth):
         previous, current = current, previous + current
 
     return current
+
+# my second answer
+def fibonacci(num):
+    fib_list = [1]
+    fib_num = 1
+    for _ in range(num - 1):
+        fib_list.append(fib_num) 
+        fib_num = fib_list[-1] + fib_list[-2]
+
+    return fib_list[-1]

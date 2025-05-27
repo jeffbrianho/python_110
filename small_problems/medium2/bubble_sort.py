@@ -71,3 +71,30 @@ def bubble_sort(lst):
 
         if not swapped:
             break
+
+# my answer
+def bubble_sort(lst):
+    indx = 0
+    while indx < len(lst) - 1:
+        if lst[indx] < lst[indx + 1]:
+            indx += 1
+        else:
+            lst[indx], lst[indx + 1] = lst[indx + 1], lst [indx]
+            indx = 0 
+    return lst
+# less than 5 mins
+
+
+# 10 mins
+def bubble_sort(lst):
+    not_sorted = True
+
+    while not_sorted:
+        not_sorted = False
+
+        for indx in range(len(lst) - 1):
+            if lst[indx] > lst[indx + 1]:
+                lst[indx], lst[indx + 1] = lst[indx + 1], lst [indx]
+                not_sorted = True
+
+    return lst

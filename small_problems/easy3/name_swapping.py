@@ -24,6 +24,11 @@ def swap_name(name):
 # def swap_name(name):
 #     return ', '.join(name.split()[::-1])
 
+# my answer
+def swap_name(string):
+    return ', '.join(string.split()[::-1])
+ 
+
 print(swap_name('Joe Roberts') == "Roberts, Joe")   # True
 print(swap_name('Karl Oskar Henriksson Ragvals'))#
                 # == "Ragvals, Karl Oskar Henriksson")  # True

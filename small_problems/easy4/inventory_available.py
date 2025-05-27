@@ -84,3 +84,20 @@ print(is_item_available(105, transactions) == True)   # True
 #             quantity -= transaction["quantity"]
 
 #     return quantity > 0
+
+### second attempt 8:39
+
+def transactions_for(id, list_of_dicts):                    # Isolates specific dictionaries
+    return [dictionary for dictionary in list_of_dicts
+                        if dictionary['id'] == id]
+
+
+def sum_of_items(list_of_dicts):                            # will sum the quantity of items in dictionaries
+    return sum([
+            dictionary['quantity'] 
+            if dictionary['movement'] == 'in' else (-dictionary['quantity']) 
+            for dictionary in list_of_dicts
+                    ])
+
+def is_item_available(id, list_of_dicts):                   # returns if an item is in stock '> 0'
+    return sum_of_items(transactions_for(id, list_of_dicts)) > 0

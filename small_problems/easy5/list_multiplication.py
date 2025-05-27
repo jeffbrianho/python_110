@@ -44,3 +44,7 @@ def multiply_items(list1, list2):
     return result
 
 # range is cleaner than enumerate as the numbers will be the same index
+
+#second trial 1 min
+def multiply_items(list1, list2):
+    return [list1[indx] * list2[indx] for indx in range(len(list1))]

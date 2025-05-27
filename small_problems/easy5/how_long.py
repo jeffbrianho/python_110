@@ -77,3 +77,8 @@ print(word_lengths() == [])                          # True
 
 
 # MAIN TAKEAWAY IS USING (string='') as a default parameter for empty arguments
+
+# second attempt 1 min
+
+def word_lengths(strings=''):
+    return [f'{string} {len(string)}' for string in strings.split()]

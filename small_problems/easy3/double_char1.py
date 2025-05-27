@@ -33,3 +33,7 @@ print(repeater('') == "")                             # True
 #Their answer
 def repeater(string):
     return ''.join([char * 2 for char in string])
+
+#myanswer
+def repeater(string):
+    return ''.join([char * 2 for char in string])

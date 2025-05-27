@@ -55,3 +55,14 @@ print(palindromes('knitting cassettes') ==
                       'nittin', 'itti', 'tt', 'ss',
                       'settes', 'ette', 'tt',
                   ])    # True
+
+## second attempt 3 min
+
+def all_substrings(string):
+    return [string[start:end] for start in range(len(string))
+                            for end in range(start + 1, len(string) + 1)]
+
+def palindromes(string):
+    return [substring for substring in all_substrings(string)
+            if substring == substring[::-1]
+            if len(substring) > 1]

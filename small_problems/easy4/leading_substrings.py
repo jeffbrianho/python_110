@@ -43,3 +43,7 @@ print(leading_substrings('a') == ['a'])
 print(leading_substrings('xyzy') == ['x', 'xy', 'xyz', 'xyzy'])
 
 #This will provide a list of substrings from the leading letter and concatenating the next for each element
+
+# 3 mins
+def leading_substrings(string):
+    return [string[:end + 1] for end in range(len(string))]

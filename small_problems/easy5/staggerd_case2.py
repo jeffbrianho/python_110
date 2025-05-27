@@ -94,3 +94,28 @@ def staggered_case(string):
 
     return result
 
+
+# my second ansewr 6 mins
+def staggered_case(string):
+    upper_toggle = True
+    final_string = ''
+    
+    for char in string:
+        if upper_toggle:
+            if char.isalpha():
+                final_string += char.upper()
+                upper_toggle = False
+            else:
+                final_string += char
+        else:
+            if char.isalpha():
+                final_string += char.lower()
+                upper_toggle = True
+            else:
+                final_string += char
+
+    return final_string
+
+# upper = not upper # reverse the trutiness from "not True" to upper = False; then not False to True (switch it)
+# this would be an easier toggle make it not what it was
+# pretty close if i had the not upper logic down. 

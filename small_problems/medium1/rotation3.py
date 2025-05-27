@@ -64,3 +64,11 @@ def max_rotation(number):
     return number
 
 # This will go through each char and swap to the end for each char until it hits every element. 
+
+## trial 2 8:00 mins
+
+def max_rotation(num):
+    string_num = str(num)
+    for indx in range(len(string_num)):
+        string_num = string_num[:indx] + string_num[indx + 1 :] + string_num[indx]
+    return int(string_num)

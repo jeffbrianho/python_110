@@ -41,3 +41,18 @@ print(is_balanced("((What)) (is this))?") == False)  # True
 print(is_balanced("Hey!") == True)                   # True
 print(is_balanced(")Hey!(") == False)                # True
 print(is_balanced("What ((is))) up(") == False)      # True
+
+
+def is_balanced(string):
+    count = 0
+    if string.count('(') == string.count(')'):
+        for char in string:
+            if count < 0:
+                return False
+            if char == '(':
+                count += 1
+            elif char == ')':
+                count -= 1
+        return True
+    else:
+        return False

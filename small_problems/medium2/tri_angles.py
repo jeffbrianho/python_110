@@ -78,3 +78,22 @@ def triangle(angle1, angle2, angle3):
     
     # treat as list and booleans
     
+# my answer 11:28 mins
+
+def is_valid_triangle(deg_lst):
+
+    return all([deg > 0 for deg in deg_lst]) and \
+            sum(deg_lst) == 180
+
+def triangle(deg1, deg2, deg3):
+    list_of_deg = [deg1, deg2, deg3]
+
+    if is_valid_triangle(list_of_deg):
+        if any([deg == 90 for deg in list_of_deg]):
+            return "right"
+        elif any([deg > 90 for deg in list_of_deg]):
+            return "obtuse"
+        else:
+            return "acute"
+    else:
+        return "invalid"

@@ -65,3 +65,12 @@ def rotate_rightmost_digits(number, count):
 
 def rotate_string(string):
     return string[1:] + string[0]
+
+# second attempt 7:32 s
+
+def rotate_rightmost_digits(num, place):
+    string_list = list(str(num))
+    return_value = string_list.pop(-place)
+    string_list.append(return_value)
+
+    return int(''.join(string_list))

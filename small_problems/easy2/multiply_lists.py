@@ -36,3 +36,8 @@ print(multiply_list(list1, list2) == [27, 50, 77])  # True
 #zip
 def multiply_list(numbers1, numbers2):
     return [a * b for a, b in zip(numbers1, numbers2)]
+
+# second answer
+
+def multiply_list(lst1, lst2):
+    return [lst1[indx] * lst2[indx] for indx in range(len(lst1))]

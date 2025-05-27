@@ -18,3 +18,8 @@ print(invert_dict({
           'fish': 'salmon',
       })  # True
 
+# second attempt 1 min
+
+def invert_dict(dictionary):
+    return {key: value for value, key in dictionary.items()}
+

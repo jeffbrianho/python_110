@@ -120,3 +120,28 @@ def letter_percentages(string):
     }
 
 # they made a function for the % and hardcoded the dictionary
+
+# 5 mins second attempt
+
+def letter_percentages(string):
+    total_length = len(string)
+    total_upper = 0
+    total_lower = 0
+    total_neither = 0
+
+    for char in string:
+        if char.isupper():
+            total_upper += 1
+        elif char.islower():
+            total_lower += 1
+        else:
+            total_neither += 1
+
+    percent_lower = total_lower / total_length * 100
+    percent_upper = total_upper / total_length * 100
+    percent_neither = total_neither / total_length * 100
+
+    return {'lowercase': f'{percent_lower:.2f}',
+            'uppercase': f'{percent_upper:.2f}',
+            'neither': f'{percent_neither:.2f}',
+    }

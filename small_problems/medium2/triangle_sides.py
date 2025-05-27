@@ -105,3 +105,23 @@ def triangle(side1, side2, side3):
         return get_triangle_type(side1, side2, side3)
     else:
         return "invalid"
+    
+# second attempt t18:23 took time for logic 
+
+def triangle(side1, side2, side3):
+    triangle_list = [side1, side2, side3]
+
+    def is_triangle(lst):
+        return max(lst) < (sum(lst) - max(lst))
+
+    if is_triangle(triangle_list):
+        if  all([x == triangle_list[0] for x in triangle_list]):
+            return 'equilateral'
+        if any(triangle_list.count(x) == 2 for x in triangle_list):
+            return 'isosceles'
+        if all([triangle_list.count(x) == 1 for x in triangle_list]):
+            return 'scalene'
+
+    else:
+        return 'invalid'
+    

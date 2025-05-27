@@ -75,3 +75,20 @@ def word_to_digit(sentence):
 
 #Use a dictionary to store numbers and use key access to get the desired word. 
 # make a list and join using the word as the default if not in the dictionary. 
+
+# second attempt 5:18 mins
+
+
+def word_to_digit(sentence):
+    REFERENCE = {'zero': '0',
+                 'one': '1',
+                 'two': '2',
+                 'three': '3',
+                 'four': '4',
+                 'five': '5'}
+    
+    words_in_setenence = sentence.split()
+    
+    modified_list = [word if word not in REFERENCE else REFERENCE[word]
+                     for word in words_in_setenence]
+    return ' '.join(modified_list)

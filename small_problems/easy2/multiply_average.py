@@ -48,6 +48,14 @@ def multiplicative_average(numbers):
 
     return round_to_three_digits(product / len(numbers))
    
+# my answer 2
+def multiplicative_average(lst):
+    number = 1
+    for num in lst:
+        number *= num
+    
+    final_num = number / len(lst)
+    return f'{final_num:.3f}'
 
 
 # All of these examples should print True

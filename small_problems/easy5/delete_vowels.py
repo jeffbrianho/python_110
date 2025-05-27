@@ -60,3 +60,16 @@ def remove_vowels(string_list):
     return [strip_vowels(string) for string in string_list]
 
 #MAKE TWO FUNCTIONS  cleaner!
+
+#second attempt 6 mins
+def remove_vowels(lst):
+    VOWELS = 'aeiouAEIOU'
+
+    final_list = []
+
+    for word in lst:
+        new_word = [char for char in word
+         if char not in VOWELS]
+        final_list.append(''.join(new_word))
+
+    return final_list

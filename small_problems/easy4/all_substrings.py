@@ -31,3 +31,14 @@ print(substrings('abcde') == expected_result)  # True
 
 
 # This will provide a list of all substring iterations in order. 
+
+#second attempt with help 7 mins
+
+def leading_substrings(string):
+    return [string[:end + 1] for end in range(len(string))]
+
+def substrings(string):
+    return [substring for start in range(len(string))
+                      for substring in leading_substrings(string[start:])]
+    
+

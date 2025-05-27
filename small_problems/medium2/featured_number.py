@@ -103,3 +103,25 @@ def next_featured(number):
     return "There is no possible number that fulfills those requirements."
 
 # use a set to elimiate all numbers and if the lengths are the same. there are no repeat digits.
+
+
+def next_featured(num):
+    
+    MAX_NUM = 9876543201
+
+
+    def is_unique(num):
+        is_odd_and_div_7 = all([num % 2 != 0, num % 7 == 0])
+        is_not_doubled = all([str(num).count(char) <= 1 for char in str(num)])
+
+        return is_not_doubled and is_odd_and_div_7
+
+    num += 1
+
+    while not is_unique(num):
+        num += 7
+        if num > MAX_NUM:
+            return "There is no possible number that fulfills those requirements."
+        
+    return num
+# 24:19 mins

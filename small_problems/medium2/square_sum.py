@@ -44,3 +44,11 @@ def sum_square_difference(count):
         sum_of_squares += i**2
 
     return sum_**2 - sum_of_squares
+
+# my second answer 6:25 mins
+
+def sum_square_difference(num):
+    sum_squared = sum([dig for dig in range(1, num + 1)])**2
+    squared_sum = sum([dig**2 for dig in range(1, num + 1)])
+
+    return sum_squared - squared_sum
